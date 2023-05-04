@@ -113,6 +113,20 @@ $hotels = [
             </td>
             <?php } ?>
         </tr>
+
+
+        <!-- Table row with distance from the center -->
+        <tr>
+            <?php foreach($hotels as $hotelDist){?>
+                <td>
+                    <p>
+                        Distanza dal centro:
+                        <strong><?php echo $hotelDist['distance_to_center']?></strong>
+                        km
+                    </p>
+                </td>
+            <?php }?>
+        </tr>
     </tbody>
 
    </table>
